@@ -1,45 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>ARiDe - An online compiler</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Css starts here-->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta charset="UTF-8">
+    <title>ARiDe - an Online IDE</title>
 
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 <body>
 
-    <div class="header">
-        <h3>ARiDe - A online compiler...</h3>
-    </div>
-
-    <div class="contro-panel">
-        Select Languages: 
+    <div class="header"> ARiDe - an Online IDE... </div>
+    <div class="control-panel">
+        Select Language:
         &nbsp; &nbsp;
         <select id="languages" class="languages" onchange="changeLanguage()">
             <option value="c"> C </option>
             <option value="cpp"> C++ </option>
             <option value="php"> PHP </option>
-            <option value="python"> Pyhton </option>
-            <option value="Node Js"> Node JS </option>
+            <option value="python"> Python </option>
+            <option value="node"> Node JS </option>
         </select>
     </div>
-
-    <div class="editor" id="editor">
-        
-    </div>
+    <div class="editor" id="editor"></div>
 
     <div class="button-container">
         <button class="btn" onclick="executeCode()"> Run </button>
     </div>
 
+    <div class="output"></div>
+
     <!-- JS starts here -->
     <script src="http://robin.adovasoft.com/cdn/js/jquery-3.6.0.min.js"></script>
     <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
     <script src="js/ide.js"></script>
-</body>
 
+</body>
 </html>
