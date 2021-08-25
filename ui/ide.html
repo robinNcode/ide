@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ARiDe - A online compiler</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Css starts here-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+    </div>
+
+    <div class="contro-panel">
+        Select Languages: 
+        &nbsp; &nbsp;
+        <select id="languages" class="languages" onchange="changeLanguage()">
+            <option value="c"> C </option>
+            <option value="cpp"> C++ </option>
+            <option value="php"> PHP </option>
+            <option value="python"> Pyhton </option>
+            <option value="Node Js"> Node JS </option>
+        </select>
+    </div>
+
+    <div class="editor" id="editor">
+        
+    </div>
+
+    <div class="button-container">
+        <button class="btn" onclick="executeCode()"> Run </button>
+    </div>
+
+    <!-- JS starts here -->
+    <script src="js/ide.js"></script>
+</body>
+
+</html>
