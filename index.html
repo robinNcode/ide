@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ARiDe - an Online Compiler</title>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://robin.adovasoft.com/cdn/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card shadow-lg p-3 mb-5 bg-white">
+            <h4 class="card-header text-center text-info">ARiDe - an Online Compiler </h4>
+            <div class="card-body">
+                <div class="row form-group">
+                    <label for="laguages" class="col-sm-6 col-md-2">Select Language : </label>
+                    <div class="col-sm-4 col-md-3">
+                        <select id="languages" class="languages form-control" onchange="changeLanguage()">
+                            <option value="c"> C </option>
+                            <option value="cpp"> C++ </option>
+                            <option value="php"> PHP 7.4 </option>
+                            <option value="py"> Python 3.8 </option>
+                            <option value="js"> Java Script </option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2 col-md-7 text-right">
+                        <button class="btn btn-sm btn-success" onclick="executeCode()"> Run </button>
+                    </div>
+                </div>
+                <!-- Editor section -->
+                <div class="row editor" id="editor">
+
+                </div>
+
+                <h5 class="mt-4 text-success">Output : </h5>
+                <div class="row output" id="output"></div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://robin.adovasoft.com/cdn/js/jquery-3.6.0.min.js"></script>
+    <script src="http://robin.adovasoft.com/cdn/js/popper-2.9.3.min.js"></script>
+    <script src="http://robin.adovasoft.com/cdn/bootstrap.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/ide.js"></script>
+
+</body>
+
+</html>
