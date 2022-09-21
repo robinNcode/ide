@@ -16,7 +16,6 @@ $language = strtolower($_POST['language']);
     fclose($program_file);
 
     if($language == 'c'){
-        echo "C processing";
         $outputExe = $random . 'exe';
         shell_exec("gcc $file_path -o $outputExe 2>&1");
 
@@ -31,11 +30,11 @@ $language = strtolower($_POST['language']);
         echo $output;
     }
     else if($language == 'php'){
-        $output = shell_exec("/usr/bin/php7.4 $file_path 2>&1");
+        $output = shell_exec("php $file_path 2>&1");
         echo $output;
     }
     else if($language == 'py'){
-        $output = shell_exec("/usr/bin/python3.8 $file_path 2>&1");
+        $output = shell_exec("python $file_path 2>&1");
         echo $output;
     }
     else if($language == 'js'){

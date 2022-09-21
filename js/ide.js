@@ -24,7 +24,7 @@ function changeLanguage(){
 //To execute the syntex
 function executeCode(){
     $.ajax({
-        url: "/ide/app/compiler.php",
+        url: "../ide/app/compiler.php",
         method: "POST",
         data:{
             language: $('#languages').val(),
